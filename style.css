@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  color: #fff;
+  background: linear-gradient(45deg, black, red, blue, white);
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Main {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.a1 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/*       button Hai Ye */
+
+button {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  box-shadow: 0 0 15px #fff;
+  z-index: 0;
+  
+  color: #fff;
+}
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  border-radius: 15px;
+  z-index: -1;
+}
+button::before {
+  content: "";
+  background: linear-gradient(
+  45deg, red, blue, green, yellow);
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+}
+
+
+
+
+h1 {
+  color: #fff;
+}
+
+/*DRILLING KE LIYE HAI*/
+
+
+#num {
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+  font-size: 3em;
+  border-radius: 10px;
+  text-align: center;
+}
+label {
+  position: absolute;
+  left: 10px;
+  width: 70px;
+  height: 50px;
+  font-size: 3em;
+}
+
+
+
+
+input {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  font-size: 2em;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 0;
+  background: transparent;
+  color: #fff;
+}
+  
+
+
+/*RPM KE LIYE HAI*/

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VMC_GCODE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup">
+    <label onclick="back()" hidden><ion-icon name="arrow-back-outline"></ion-icon></label>
+    <h1 class="pop">Hajrateali</h1>
+  </div>
+  
+  
+  
+  
+  <div class="main">
+    <div class="a" >
+      <div class="a1">
+        <button onclick="DRILL()">DRILLING</button>
+        <button onclick="INTERP()">INTERPOLATION</button>
+        <button onclick="MILL()">MILLING</button>
+        <button onclick="DRILLRPM()">DRILL RPM</button>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="b" hidden>
+      <div class="a1">
+        <input type="number" id="num" placeholder="Diameter"/>
+        <button onclick="RPM()">Enter</button>
+        <h1 class="rpmprint"></h1>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="c" hidden>
+      <div class="a1">
+        <input type="number" id="dim" placeholder="diameter"/>
+        <input type="number" id="deep" placeholder="Deep"/>
+        <input type="number" id="srpm" placeholder="RPM"/>
+        <input type="number" id="peak" placeholder="Peak"/>
+        <button onclick="Applybtn()">Apply</button>
+      </div>
+    </div>
+    
+    <h1 class="codeprint"></h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="d" hidden>
+      <div class="a1">
+        <input type="number" id="hd" placeholder="Holl-Dia"/>
+        <input type="number" id="cd" placeholder="Cutter-dia"/>
+        <input type="number" id="indeep" placeholder="Deep"/>
+        <input type="number" id="inz" placeholder="Z Step"/>
+        <input type="number" id="inf" placeholder="Feed"/>
+        <button onclick="Applyinterp()">Apply</button>
+      </div>
+    </div>
+    
+    
+    <h1 class="codeprint2"></h1>
+    
+    
+    
+    
+    
+    
+    
+    <div class="E" hidden>
+      <div class="a1">
+        <input id="" type="number" placeholder="">
+        <button type="select"></button>
+      </div>
+    </div>
+    
+    
+    
+    
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
