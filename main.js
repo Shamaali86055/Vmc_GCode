@@ -50,9 +50,9 @@ function Applybtn() {
 
   // Generating Drilling Cycle (Simple G-code)
   let gcode = `
-  (Drilling Cycle)
+  (Drilling Cycle Diameter ${dim})
   G00 G91 G28 Z0.0  ;
-  G90 G54 G80 G40 G21;(Diameter ${dim})
+  G90 G54 G80 G40 G21;
   G0 X${x} Y${y} S${rpm} M3 ; 
   Z100 M08; 
   G98 G83 X${x} Y${y} Z-${depth} R${r} Q${peak} F40 ;
