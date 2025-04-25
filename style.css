@@ -122,7 +122,7 @@ input {
   border-radius: 10px;
   text-align: center;
   z-index: 0;
-  background: transparent;
+  background: black;
   color: #fff;
 }
   
